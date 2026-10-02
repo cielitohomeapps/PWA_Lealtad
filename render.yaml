@@ -40,5 +40,8 @@ services:
         sync: false
     routes:
       - type: rewrite
+        source: /oauth-callback
+        destination: /index.html
+      - type: rewrite
         source: /*
         destination: /index.html
